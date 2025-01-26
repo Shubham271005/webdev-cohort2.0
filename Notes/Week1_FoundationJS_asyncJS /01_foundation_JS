@@ -1,0 +1,62 @@
+# Basics
+
+- JS is interpreted language (not compiled), So can run the program partially if error comes later.
+- It goes line by line (interpreted)
+  (One line runs at a time)
+- for printing ~ console.log("hello world");
+
+
+# Why JS
+
+- Browsers can only understand HTML/CSS/JS (not technically true)
+- Due to Node.js, JS can also be used for backend development.
+- JavaScript is a dynamic language (can move fast)
+- JS is single threaded
+  . JS cacn only use one thread at a time, which is bad for a scalable system, though there is a way to make it use all coures of your machine.
+
+Variables - (let, var, const)    /var is not used nowadays/
+Data types - strings, numbers and booleans
+If/Else and Loops - same as in C++
+- They are simple primitives
+
+
+# Arrays
+
+Arrays are used to store multiple values in a single variable.
+  eg- const ages = [21, 22, 23, 24, 25]
+       now age[0] = 21 , age[3] = 24
+           age.length = 5 (size of array)
+  Syntax -  let array = [value1, value2, value3];  // Create an array 
+            console.log(array[0]);  // Access the first element
+
+
+# Objects
+
+An object in JavaScript is a collection of key-value pairs, where each key is a string and each value can be any data type.
+It's used to store/aggregate related data together.
+
+  eg- let person = {
+          name: 'John',
+          age: 30,
+          isStudent: false
+          };
+
+     Here:
+     -   name, age, and isStudent are the keys (or properties).
+     -  'John', 30, and false are the values associated with those keys.
+    Objects are essential for organizing and managing complex data in JavaScript!
+
+
+# Functions
+
+- Abstract out logic in your program.
+- Take argument as an input.
+- Return a value as output.
+- It is like an independent program that is supposed to do something given an input.
+- Functions CAN take other functions as input i.e Callbacks (further in detail)
+                                    
+ Syntax -  function functionName(parameters){  
+                      //function body
+                    return value;
+                     }
+// input which is written in small brackets () are called arguments   (parameters)

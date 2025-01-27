@@ -47,6 +47,50 @@ It's used to store/aggregate related data together.
     Objects are essential for organizing and managing complex data in JavaScript!
 
 
+# Class
+
+- A class is essentially a blueprint for creating objects. 
+  It defines the properties and methods that the objects created from it will have.
+
+ Syntax-  class className {
+            constructor ( property1 , property2 ){
+                  this.property1 = Prop1;
+                  this.property2 = Prop2;
+                      }
+           methodName(){
+             console.log ( property1 : P1 , property2 : P2 );
+                   }
+                 }
+
+eg-  class Animal {
+        constructor ( name , legCount ){
+            this.name = name ;
+            this.legCount = legCount ;
+             }
+          identity () {                                                   //  wrote "identity" instead of "name" to avoid name conflict
+            console.log ( "hi there , I am  " + this.name );
+                  }
+                 }      
+          let dog = new Animal ( "dog" , 4 )    // create object 
+          dog.identity () ;     // call function on object            
+    // Output : hi there , I am dog
+
+- You can't create and use an object inside the class.
+  Class definitions are used only for declaring the structure of objects, not for creating instances or invoking methods.
+
+
+# Static Functions 
+-  Not associated to objects,
+   associated to class itself.
+
+eg- static myType () {
+      console.log ("Animal")
+          }
+      console.log(Animal.identity());   // in above code  
+// Output : Animal
+
+
+
 # Functions
 
 - Abstract out logic in your program.
@@ -60,3 +104,25 @@ It's used to store/aggregate related data together.
                     return value;
                      }
 // input which is written in small brackets () are called arguments   (parameters)
+
+
+# CallBack Functions
+
+- It is basically passing a function as argument for another function
+  i.e calling one function inside another function 
+
+  eg-   function square(a){
+             return a*a
+              }
+        function cube(a){
+             return a*a*a
+              }
+        function sumOfSomething (a, b, fn){   // this fn is callback 
+            const val1 = fn(a);
+            const val2 = fn(b);
+          return val1 + val2;
+            }
+         console.log(sumOfSomething (2, 4, cube));      output : 72
+
+
+   

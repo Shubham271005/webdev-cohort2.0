@@ -130,5 +130,16 @@ eg- static myType () {
             }
          console.log(sumOfSomething (2, 4, cube));      output : 72
 
+-----------------------------------------------------------------------
+
+# Asynchronous Function vs Synchronous Function
+
+Synchronous - together, one after another, sequential
+              Only one thing is happening at a time
+Asynchronous - Opposite of synchronous, happens in parts                               // maggi example
+               Multiple things are context switching with each other
+
+  
+
 
    

@@ -139,7 +139,8 @@ Synchronous - together, one after another, sequential
 Asynchronous - Opposite of synchronous, happens in parts                               // maggi example
                Multiple things are context switching with each other
 
-  
-
+         Human brain and body is single threaded 
+   1. We can only do one thing at a time 
+   2. But we can context switch b/w tasks, or we can delegate tasks to other people
 
    
